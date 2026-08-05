@@ -1,0 +1,129 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Poppins, sans-serif;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #00c947, #0088ff);
+}
+
+.login-card{
+    background-color: #fff;
+    width: 500px;
+    padding: 40px;
+    border-radius: 25px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+h1{
+    text-align: center;
+    margin-bottom: 10px;
+    color: #666;
+}
+
+.login-card p{
+    text-align: center;
+    margin-bottom: 35px;
+    color: #666;
+}
+
+.input-box{
+    position: relative;
+    margin-bottom: 28px;
+}
+
+.input-box input{
+    width: 100%;
+    padding: 15px;
+    background: transparent;
+    border-radius: 10px;
+    font-size: 16px;
+    color: #333;
+    border: 2px solid #ddd;
+}
+
+.input-box input:focus{
+    outline: none;
+    border-color: #1d2b64;
+}
+
+.input-box label{
+    position: absolute;
+    left: 15px;
+    top: 15px;
+    transition: .3s;
+}
+
+.input-box input:focus + label,
+.input-box input:valid + label
+{
+    top: -10px;
+    left: 15px;
+    background: #1d2b64;
+    padding: 2px 8px;
+    font-size: 12px;
+    color: #fff;
+    border-radius: 20px;
+}
+
+.checklist-row{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 25px;
+    font-size: 14px;
+}
+
+.checklist-row a{
+    color: #1d2b64;
+    text-decoration: none;
+}
+
+button{
+    width: 100%;
+    padding: 14px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    background: linear-gradient(135deg, #00c947, #0088ff);
+    color: #fff;
+    transition: .3s;
+}
+
+button:hover{
+    transform: translateY(-4px);
+}
+
+.divider{
+    text-align: center;
+    margin: 20px 0;
+    color: #1d2b64;
+    font-weight: 600;
+}
+
+.google-btn{
+    background: white;
+    color: #1d2b64;
+}
+
+.google-btn:hover{
+    color: #fff;
+     background: linear-gradient(135deg, #00c947, #0088ff);
+}
+
+.signup{
+    margin-top: 25px;
+}
+
+.signup a{
+    color: #1d2b64;
+    font-weight: bold;
+}
